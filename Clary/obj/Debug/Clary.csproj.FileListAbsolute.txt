@@ -1,0 +1,13 @@
+C:\Users\ricky\source\repos\Clary\Clary\bin\Debug\Clary.exe.config
+C:\Users\ricky\source\repos\Clary\Clary\bin\Debug\Clary.exe
+C:\Users\ricky\source\repos\Clary\Clary\bin\Debug\Clary.pdb
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.Form1.resources
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.Properties.Resources.resources
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.csproj.GenerateResource.cache
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.csproj.CoreCompileInputs.cache
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.exe
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.pdb
+C:\Users\ricky\source\repos\Clary\Clary\bin\Debug\Microsoft.Speech.dll
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.csproj.CopyComplete
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.ClaryWindowTemplate.resources
+C:\Users\ricky\source\repos\Clary\Clary\obj\Debug\Clary.csprojAssemblyReference.cache

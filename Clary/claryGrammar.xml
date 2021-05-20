@@ -1,0 +1,125 @@
+﻿<grammar version="1.0" xml:lang="en-GB" root="rootRule"
+ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+
+	<rule id="rootRule">
+		<item repeat="0-1">clary</item><!--The repeat="0-1" means that the person can say the word but is not required-->
+		<one-of>
+			<item>
+				<ruleref uri="#claryModes" />
+				<tag>out.claryModes=rules.claryModes.mode</tag><!--Returns the value of the property mode that was said-->
+			</item>
+			<item>
+				<ruleref uri="#claryMemos" />
+				<tag>out.claryMemos=rules.claryMemos.memo</tag>
+			</item>
+			<item>
+				<ruleref uri="#currentDateTime" />
+				<tag>out.currentDateTime=rules.currentDateTime.dateTime</tag>
+			</item>
+			<item>
+				<ruleref uri="#exitProgram" />
+				<tag>out.exitProgram=rules.exitProgram</tag>
+			</item>
+		</one-of>
+	</rule>
+	
+	<!--Clary Modes-->
+	<rule id="claryModes">
+		<one-of>
+			<item>switch</item>
+			<item>go</item>
+		</one-of>
+		<item>to</item>
+		<one-of>
+			<item>sleep mode<tag> out.mode="sleepMode"; </tag></item><!--Depending on the chosen word it will "return" the value "sleepMode" or "normalMode" with the property name "mode"-->
+			<item>normal mode<tag> out.mode="normalMode"; </tag></item>
+		</one-of>
+	</rule>
+	<!--Clary Modes End-->
+	<!--Clary Memos-->
+	<rule id="claryMemos">
+		<one-of>
+			<item>
+				<tag> out.memo="addMemo"; </tag>
+				<one-of>
+					<item>
+						<one-of>
+							<item>add</item>
+							<item>create</item>
+						</one-of>
+						<item repeat="0-1">new</item>
+					</item>
+					<item>new</item>
+				</one-of>
+				<item>memo</item>
+			</item>
+			<item>
+				<tag> out.memo="viewMemo"; </tag>
+				<one-of>
+					<item>view</item>
+					<item>display</item>
+				</one-of>
+				<item repeat="0-1">all</item>
+				<item>memos</item>
+			</item>
+		</one-of>
+	</rule>
+	<!--Clary Memos End-->
+	<!--Current DateTime-->
+	<rule id="currentDateTime">
+		<one-of>
+			<item>
+				<tag>out.dateTime="currentTime"</tag>
+				<one-of>
+					<item>
+						<one-of>
+							<item>give</item>
+							<item>tell</item>
+						</one-of>
+						<item>me</item>
+						<item>the</item>
+						<one-of>
+							<item>time</item>
+							<item>hours</item>
+						</one-of>
+					</item>
+				</one-of>
+			</item>
+			<item>
+				<tag> out.dateTime="currentDate"</tag>
+				<one-of>
+					<item>
+						<one-of>
+							<item>
+								<one-of>
+									<item>give</item>
+									<item>tell</item>
+								</one-of>
+								<item>me</item>
+								<item repeat="0-1">the</item>
+								<one-of>
+									<item>today's date</item>
+									<item>date</item>
+								</one-of>
+							</item>
+						</one-of>
+					</item>
+					<item>what day is today</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<!--Current DateTime End-->
+	<!--Exit Program-->
+	<rule id="exitProgram">
+		<one-of>
+			<item>terminate</item>
+			<item>exit</item>
+			<item>leave</item>
+			<item>shutdown</item>
+			<item></item>
+		</one-of>
+		<item repeat="0-1">everything</item>
+	</rule>
+		<!--Exit Program End-->
+</grammar>
