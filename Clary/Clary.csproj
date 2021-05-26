@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Clary.cs" />
     <Compile Include="ClaryConsole.cs" />
+    <Compile Include="ClaryConsoleCommands.cs" />
     <Compile Include="ClaryModes.cs" />
     <Compile Include="ClaryWindowTemplate.cs">
       <SubType>Form</SubType>
