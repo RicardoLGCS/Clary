@@ -13,6 +13,7 @@ namespace Clary
     {
         protected string sSemanticKey; //Each children will have a different value to match with the grammar file
         protected MessageDisplay MessageDisplay = new MessageDisplay();
+        protected ClaryWindowTemplate WindowTemplate = new ClaryWindowTemplate();
         protected string sLabelMessage;
 
         //Creating a get to return the object itself to the main form
