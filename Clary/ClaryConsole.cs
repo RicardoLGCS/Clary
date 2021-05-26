@@ -12,7 +12,8 @@ namespace Clary
     {
         ClaryWindowTemplate AppTemplate = new ClaryWindowTemplate();
         RichTextBox RTB = new RichTextBox();
-        
+        public ClaryConsole() { }
+
         public ClaryConsole(Form targetForm)
         {
             RTB.ForeColor = Color.LimeGreen;
@@ -35,11 +36,30 @@ namespace Clary
         {
             if(e.KeyValue == 13) //If key pressed is equal to ENTER
             {
+                for (int i = 0; i < RTB.Lines.Length; i++)
+                {
+                    if (i == (RTB.Lines.Length - 1) && RTB.Lines[(RTB.Lines.Length - 1)] != " ")
+                    {
+                        AppendTextToClaryConsole(RTB.Lines[i].Substring(7));
+                        e.Handled = true; //Prevent the RichTextBox from making a new line
+                    }
+                }
                 RTB.AppendText("\n<User> ");
                 RTB.Select(0, RTB.Text.Length);
                 RTB.SelectionProtected = true;
-                RTB.Focus();
                 RTB.Select(0, 0);
+                RTB.SelectionStart = RTB.Text.Length;
+                RTB.ScrollToCaret();
+            }
+        }
+
+        public void AppendTextToClaryConsole(string sTextToAppend)
+        {
+            switch (sTextToAppend)
+            {
+                case "crt":
+                    RTB.AppendText("\n Este é o teste");
+                    break;
             }
         }
     }
