@@ -111,7 +111,7 @@ namespace Clary
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClaryWindowTemplate";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.MediumSpringGreen;
             this.Load += new System.EventHandler(this.ClaryWindowTemplate_Load);
             this.windowBorder.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -25,7 +25,7 @@ namespace Clary
         private void ClaryWindowTemplate_Load(object sender, EventArgs e)
         {
             lblWindowNameToChange = lblWindowName;
-            this.Opacity = .80;
+            this.Opacity = .85;
         }
 
         private void lblWindowName_MouseUp(object sender, MouseEventArgs e)
