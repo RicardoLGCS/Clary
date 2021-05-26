@@ -117,7 +117,7 @@
 			<item>exit</item>
 			<item>leave</item>
 			<item>shutdown</item>
-			<item></item>
+			<item>close</item>
 		</one-of>
 		<item repeat="0-1">everything</item>
 	</rule>
