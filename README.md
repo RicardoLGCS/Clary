@@ -17,7 +17,9 @@ Again, this project was built for a windows OS and we do **NOT** provide support
 ### Installation
 You can download this repository by executing the following command:
 
+<pre>
 <code>git clone https://github.com/RicardoLGCS/Clary.git</code>
+</pre>
 
 or
 
