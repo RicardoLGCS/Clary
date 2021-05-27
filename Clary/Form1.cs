@@ -29,7 +29,7 @@ namespace Clary
         StringBuilder errorMessage;
         SpeechSynthesizer _clary;
         TerminateClary terminateClary;
-        Memos claryMemos;
+        ManageMemos claryMemos;
         private void messageTimer_Tick(object sender, EventArgs e)
         {
             MessageDisplay.writeMessageByChar(messageTimer, sMessage, this);
@@ -64,7 +64,7 @@ namespace Clary
                 claryModes = new ClaryModes(); //Since claryModes is derived from Commands and Commands from Clary it will call Clary default constructor automatically
                 currentDateTime = new CurrentDateTime();
                 terminateClary = new TerminateClary();
-                claryMemos = new Memos();
+                claryMemos = new ManageMemos();
                 Commands = new List<Commands> { claryModes, currentDateTime, terminateClary, claryMemos }; //It is possible to make a list with only classes that inherit from "Commands"
 
                 //Returning both recognizers from claryModes to use their events here

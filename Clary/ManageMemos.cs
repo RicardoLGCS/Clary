@@ -78,7 +78,7 @@ namespace Clary
             }
             return MessageDisplayObj;
         }
-
+        //TODO change this class to manageMemos and create another called Memos with memos information to save them to an xml file
         private void OnClick(object sender, EventArgs e)
         {
             if (TB.Text == "")
