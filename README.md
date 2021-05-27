@@ -15,7 +15,7 @@ Again, this project was built for a windows OS and we do **NOT** provide support
 
 ## Get started 🚀
 ### Installation
-You can download this repository by executing the following command:
+1 - You can clone this repository with the following command:
 
 <pre>
 <code>git clone https://github.com/RicardoLGCS/Clary.git</code>
@@ -24,4 +24,10 @@ You can download this repository by executing the following command:
 or
 
 <img width="350" height="350" src="https://user-images.githubusercontent.com/36314473/119902498-34866580-bf3f-11eb-9337-797d0cdd2a9e.png">
+
+2 - Navigate to the project directory:
+
+<pre>
+<code>cd Clary</code>
+</pre>
 
