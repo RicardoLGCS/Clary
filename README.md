@@ -31,3 +31,4 @@ or
 <code>cd Clary</code>
 </pre>
 
+<p align="center">Made by Ricardo Silva ☣️</p>
