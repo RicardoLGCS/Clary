@@ -45,7 +45,7 @@ namespace Clary
             iCurrentClaryXPosition = this.Location.X;
             iCurrentClaryWidth = this.Size.Width;
             iCurrentClaryHeight = this.Size.Height;
-            this.Opacity = .75;
+            this.Opacity = .80;
 
             this.Size = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             this.Location = new Point(0);

@@ -14,7 +14,7 @@ namespace Clary
         //Declaring variables
         protected SpeechSynthesizer _clary = new SpeechSynthesizer();
         //private string sWelcomeMessage = "Hello " + Environment.UserName + ", my name is clary, how may i help you?";
-        private string sWelcomeMessage = "gentlemans, how can i be useful?";
+        private string sWelcomeMessage = ", how can i be useful?";
         public SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
         public SpeechRecognitionEngine _recognizerSleep = new SpeechRecognitionEngine();
         private static string sGrammarPath = @"../../claryGrammar.xml";

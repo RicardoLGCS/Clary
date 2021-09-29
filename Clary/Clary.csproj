@@ -77,8 +77,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageMemos.cs" />
     <Compile Include="Memo.cs" />
-    <Compile Include="Memos.cs" />
     <Compile Include="MessageDisplay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
