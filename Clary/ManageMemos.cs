@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace Clary
 {
-    class Memos : Commands
+    class ManageMemos : Commands
     {
         DateTimePicker DTP = new DateTimePicker();
         TextBox TB = new TextBox();
         Button BTN = new Button();
-        public Memos()
+        public ManageMemos()
         {
             sSemanticKey = "claryMemos";
         }
