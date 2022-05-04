@@ -18,7 +18,7 @@ Again, this project was built for a windows OS and we do **NOT** provide support
 1 - You can clone this repository with the following command:
 
 <pre>
-<code>git clone https://github.com/RicardoLGCS/Clary.git</code>
+<code>git clone https://github.com/zalaszz/Clary.git</code>
 </pre>
 
 or
